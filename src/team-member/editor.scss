@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.vallee-team-member-block {
+	&__image-upload-container {
+		position: relative;
+		aspect-ratio: 4/5;
+		button {
+			background-color: white !important;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__image-upload-container.hasImage {
+		button {
+			opacity: 0;
+			transition: opacity 0.15s ease-in-out;
+			position: absolute;
+			bottom: 5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&:hover button {
+			opacity: 1;
+		}
+	}
+}

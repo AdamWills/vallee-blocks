@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "vallee-blocks/team-member",
+	"version": "0.1.0",
+	"title": "Team Member",
+	"category": "vallee-blocks",
+	"icon": "admin-users",
+	"description": "Displays a team member with an image, name, description and an optional bio that displays in a pop-up.",
+	"example": {
+		"attributes": {
+			"blockId": "1234-5678-9012-3456",
+			"imageAlt": "Team member",
+			"imageUrl": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?w=800&auto=format&fit=crop&q=60",
+			"name": "Miah Atkins",
+			"description": "CEO<br />MBA",
+			"bio": "Miah is a serial entrepreneur and the CEO of Vallee. He has a background in business and finance and has worked in the financial industry for over 10 years."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"blockId": {
+			"type": "string"
+		},
+		"imageAlt": {
+			"type": "string"
+		},
+		"imageUrl": {
+			"type": "string"
+		},
+		"name": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
+		"bio": {
+			"type": "string"
+		}
+	},
+	"textdomain": "vallee-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
