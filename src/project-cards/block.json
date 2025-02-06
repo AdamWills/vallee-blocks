@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "vallee-blocks/project-cards",
+	"version": "0.3.0",
+	"title": "Project Cards",
+	"category": "vallee-blocks",
+	"icon": "smiley",
+	"description": "Displays a card version of a Project",
+	"example": {},
+	"usesContext": ["postId", "postType", "queryId"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "project-card",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

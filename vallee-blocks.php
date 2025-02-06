@@ -5,7 +5,7 @@
  * Description:       Custom blocks used for the gdvallee.ca.
  * Requires at least: 6.1
  * Requires PHP:      8.0
- * Version:           0.1.0
+ * Version:           0.3.0
  * Author:            Adam Wills
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -28,6 +28,8 @@ if (!defined('ABSPATH')) {
 
 add_action('init', function () {
 	register_block_type(__DIR__ . '/build/team-member');
+	register_block_type(__DIR__ . '/build/project-categories');
+	register_block_type(__DIR__ . '/build/project-cards');
 });
 
 // add custom thumbnail size

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "vallee-blocks/project-categories",
+	"version": "0.3.0",
+	"title": "Project Categories",
+	"category": "vallee-blocks",
+	"icon": "portfolio",
+	"description": "Lists all project categories. If a project category is selected, it will only list projects from that category.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "project-categories",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
