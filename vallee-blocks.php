@@ -27,6 +27,7 @@ if (!defined('ABSPATH')) {
  */
 
 add_action('init', function () {
+	register_block_type(__DIR__ . '/build/featured-projects');
 	register_block_type(__DIR__ . '/build/team-member');
 	register_block_type(__DIR__ . '/build/project-categories');
 	register_block_type(__DIR__ . '/build/project-cards');

@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "vallee-blocks/featured-projects",
+	"version": "0.3.0",
+	"title": "Featured Projects",
+	"category": "vallee-blocks",
+	"icon": "smiley",
+	"description": "Displays specific projects",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"selectedProjects": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"textdomain": "project-card",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
